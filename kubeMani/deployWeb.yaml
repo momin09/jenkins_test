@@ -5,7 +5,7 @@ metadata:
 	name: myweb-deploy
 	labels:
 		app: myweb-deployment
-soec:
+spec:
 	replicas: 3
 	selector:
 		matchLabels:
