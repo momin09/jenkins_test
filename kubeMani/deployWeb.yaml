@@ -1,21 +1,19 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-	name: myweb-deploy
-	labels:
-		app: myweb-deployment
+  name: myweb-deploy
+  labels:
+    app: myweb-deployment
 spec:
-	replicas: 3
-	selector:
-		matchLabels:
-			app: myweb-deployment
-	template:
-		metadata:
-			labels:
-				app: myweb-deployment
-		spec:
-			containers:
-			-	name: myweb-container
-				image: khm0909z/mywebapp
-				-	containerport: 80	
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myweb-deployment
+  template:
+    metadata:
+      labels:
+        app: myweb-deployment
+    spec:
+      containers:
+      - name: myweb-container
+        image: khm0909z/myweb
