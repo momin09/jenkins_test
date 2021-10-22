@@ -1,0 +1,12 @@
+- name: Docker Image Build and Push
+  hosts: ansible_host
+  gahter_facts: false
+  tasks:
+  - name: Build Docker Image
+    command: docker image build -t khm0909z/mywebapp tomcat-docker-image-build
+  - name: Login to Docker Hub
+    command: docker login
+  - name: Push Image to Docker Hub
+    command: docker push khm0909z/myweb
+  - name: Remove local image
+    commad: docker image rm khm0909z/myweb tomcat:9-jdk11 
