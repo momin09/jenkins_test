@@ -3,6 +3,6 @@
   gather_facts: false
   tasks:
   - name: deploy the Pod
-    command: kubectl apply -f deployWeb.yaml
+    command: kubectl apply -f myweb-manifest/deployWeb.yaml
   - name: deploy the Svc
-    command: kubectl apply -f serviceWeb.yaml
+    command: kubectl apply -f myweb-manifest/serviceWeb.yaml
