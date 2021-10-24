@@ -22,5 +22,6 @@ spec:
       containers:
       - name: myweb-container
         image: khm0909z/myweb
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
