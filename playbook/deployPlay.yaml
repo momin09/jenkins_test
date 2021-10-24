@@ -1,6 +1,6 @@
 - name: Deploy service
   hosts: kube_host
-  gahter_facts: false
+  gather_facts: false
   tasks:
   - name: deploy the Pod
     command: kubectl apply -f deployWeb.yaml

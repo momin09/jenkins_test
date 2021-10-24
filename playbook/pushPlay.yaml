@@ -1,6 +1,6 @@
 - name: Docker Image Build and Push
   hosts: ansible_host
-  gahter_facts: false
+  gather_facts: false
   tasks:
   - name: Build Docker Image
     command: docker image build -t khm0909z/myweb .
