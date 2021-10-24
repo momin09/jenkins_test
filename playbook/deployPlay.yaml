@@ -1,4 +1,4 @@
-- name: Deploy Service
+- name: Deploy service
   hosts: kube_host
   gahter_facts: false
   tasks:

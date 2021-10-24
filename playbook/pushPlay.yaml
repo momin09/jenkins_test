@@ -3,7 +3,7 @@
   gahter_facts: false
   tasks:
   - name: Build Docker Image
-    command: docker image build -t khm0909z/mywebapp tomcat-docker-image-build
+    command: docker image build -t khm0909z/myweb .
   - name: Login to Docker Hub
     command: docker login
   - name: Push Image to Docker Hub
