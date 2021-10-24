@@ -9,4 +9,4 @@
   - name: Push Image to Docker Hub
     command: docker push khm0909z/myweb
   - name: Remove local image
-    commad: docker image rm khm0909z/myweb tomcat:9-jdk11 
+    command: docker image rm khm0909z/myweb tomcat:9-jdk11 
